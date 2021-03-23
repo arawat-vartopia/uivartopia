@@ -1,0 +1,574 @@
+<header>
+  <img src="assets/images/topheader.jpg">
+</header>
+
+
+<div class="outer">
+  <div class="new-registration">
+
+    <!-- <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+    {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+  </button> -->
+
+    <mat-drawer-container class="example-container" autosize>
+
+      <mat-drawer #drawer class="example-sidenav" [mode]="screenWidth >= 1250 ? 'side': 'over'"
+        [opened]="screenWidth >= 1000 ? 'true': 'false'" position="end">
+        <button class="slide-button" type="button" mat-button (click)="drawer.toggle()">
+          <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
+        <div class="title-sidepanel">
+          <h4>Summary Pane </h4>
+          <button class="close-review">
+            <mat-icon aria-hidden="false" aria-label="Example home icon">close</mat-icon>
+          </button>
+        </div>
+
+        <div class="scroll-region">
+          <!--Step 1 Review start-->
+          <div class="review-card">
+            <h5>OPPORTUNITY INFORMATION</h5>
+
+            <div class="filled-value">
+              <label class="placeholder">Name</label>
+              <div class="inputvalue">Auto Reg Training</div>
+            </div>
+
+            <div class="filled-value">
+              <label class="placeholder">CRMID</label>
+              <div class="inputvalue">EE669047-E897-E311-A5A7-D7633DBC</div>
+            </div>
+
+            <div class="filled-value">
+              <label class="placeholder">Description</label>
+              <div class="inputvalue">Registration for new vendors</div>
+            </div>
+
+          </div>
+          <!--Step 1 Review end-->
+
+          <!--Step 2 Review start-->
+          <div class="review-card">
+            <h5>SALES REP &amp; END CUSTOMER INFORMATION</h5>
+
+            <div class="r-selected-card">
+              <h6>VARTOPIA SALES REP</h6>
+              <div class="selected-card">
+                <div class="icon-placeholder"><img src="assets/images/new-reg-user-icon.svg" alt=""> </div>
+                <h4>Aaron Bliss</h4>
+                <p><a href="mailto:orren.blass@kennekpaen.kem">orren.blass@kennekpaen.kem</a></p>
+                <p><a href="tel:+18008000014">18008000014</a></p>
+              </div>
+            </div>
+
+
+            <div class="r-selected-card">
+              <h6>Submitter</h6>
+              <div class="selected-card">
+                <div class="icon-placeholder"><img src="assets/images/new-reg-company-icon.svg" alt=""> </div>
+                <h4>Mark Olson</h4>
+                <p><a href="mailto:markolsnec87@gmail.com">markolsnec87@gmail.com</a></p>
+                <p><a href="tel:+800.800.0014">800.800.0014</a></p>
+              </div>
+            </div>
+
+
+            <div class="r-selected-card">
+              <h6>End Customer Company Information</h6>
+              <div class="selected-card">
+                <div class="icon-placeholder"><img src="assets/images/new-reg-company-icon.svg" alt=""> </div>
+                <h4>Absolute Manufacturing</h4>
+                <p>20350 71st AVE NE Ste C<br>
+                  Arlington, WA 98223-7455<br>
+                  USA</p>
+              </div>
+            </div>
+
+
+            <div class="r-selected-card">
+              <h6>End Customer Primary Contact Information</h6>
+              <div class="selected-card">
+                <div class="icon-placeholder"><img src="assets/images/new-reg-company-contact-icon.svg" alt=""> </div>
+                <h4>Rock Bloomberg | IT Manager</h4>
+                <p><a href="mailto:markolsnec87@gmail.com">rakkb@obselipemfg.kem</a></p>
+                <p><a href="tel:+(360) 383-4623">(360) 383-4623</a></p>
+                <p>NA</p>
+              </div>
+            </div>
+
+          </div>
+          <!--Step 2 Review end-->
+
+          <!--Step 3 Review start-->
+          <div class="review-card">
+            <h5>Program Selection</h5>
+
+            <!--Selected Program start-->
+            <div class="selected-program">
+              <div class="bordered-region ">
+                <div class="form-check">
+                  Fedral Reseller Registration
+                </div>
+                <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+              </div>
+              <div class="r-program"><button>
+                  <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon>
+                </button></div>
+            </div>
+            <!--Selected Program end-->
+
+            <!--Selected Program start-->
+            <div class="selected-program">
+              <div class="bordered-region ">
+                <div class="form-check">
+                  Reseller Registration
+                </div>
+                <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+              </div>
+              <div class="r-program"><button>
+                  <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon>
+                </button></div>
+            </div>
+            <!--Selected Program end-->
+
+
+            <!--Selected Program start-->
+            <!-- <div class="selected-program">
+              <div class="program-name">Federal Reseller Registration</div>
+              <div class="program-logo">
+                <img src="assets/images/zoom.png" alt="">
+              </div>
+              <div class="remove-program">
+                <a href="#"><img src="assets/images/close.svg"></a>
+              </div>
+            </div> -->
+            <!--Selected Program end-->
+
+          </div>
+          <!--Step 3 Review end-->
+
+        </div>
+        <!-- <p>Auto-resizing sidenav</p>
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button> -->
+      </mat-drawer>
+
+      <div class="example-sidenav-content">
+        <!-- <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button> -->
+        <div class="form-new-reg">
+          <div class="form-newreg-title">
+            <h3>Registration in 3 simple steps</h3>
+            <h5>This information will let us know more about you</h5>
+          </div>
+
+          <mat-vertical-stepper [linear]="isLinear" #stepper>
+            <mat-step [stepControl]="firstFormGroup">
+              <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel>Opportunity Information</ng-template>
+                <!--Step 1 Start-->
+                <div class="step1">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="step-fieldbox ">
+                        <mat-form-field class="example-full-width">
+                          <mat-label>Name</mat-label>
+                          <input matInput #name placeholder="Name" required maxlength="70">
+                          <mat-hint align="end">{{name.value.length}} / 70</mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="step-fieldbox ">
+                        <mat-form-field class="example-full-width with-tooltip">
+                          <mat-label>VarName: CRM Opportunity ID# / Custom Field</mat-label>
+                          <input matInput #varname placeholder="VarName: CRM Opportunity ID# / Custom Field"
+                            maxlength="50">
+                          <mat-hint align="end">{{varname.value.length}} / 50</mat-hint>
+
+                        </mat-form-field>
+                        <mat-icon aria-hidden="false" aria-label="help icon"
+                          matTooltip="This field can be used to store a unique data value. Use cases include your CRM opportunity ID, Quote Number, etc. Please note, you can also add this field to your report views by adding the VAR CRM Opportunity ID Column to the report layout.">
+                          help</mat-icon>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="step-fieldbox ">
+                        <mat-form-field class="example-full-width">
+                          <mat-label>Description</mat-label>
+                          <input matInput #description placeholder="Description" maxlength="50">
+                          <mat-hint align="end">{{description.value.length}} / 250</mat-hint>
+                        </mat-form-field>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Step 1 End-->
+                <div class="btn-bar">
+                  <button mat-button matStepperNext mat-button mat-raised-button color="primary">Next</button>
+                </div>
+              </form>
+
+            </mat-step>
+            <mat-step [stepControl]="secondFormGroup">
+              <form [formGroup]="secondFormGroup">
+                <ng-template matStepLabel>Sales Rep & End Customer Information</ng-template>
+                <!--Step 2 Start-->
+                <div class="step2">
+                  <div class="panel-newreg">
+                    <div class="card-newreg">
+                      <div class="card-header bg-primary">
+                        <h5>VARTOPIA SALES REP</h5>
+                      </div>
+                      <div class="card-body">
+                        <div class="search-region">
+                          <input type="text" placeholder="Search Customer list or scroll to load more...">
+                          <!--Loader and Close comes here-->
+                          <div class="loader-region"><button class="close-review" style="margin-top: 4px;">
+                              <mat-icon aria-hidden="false" aria-label="Example home icon">close</mat-icon>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="selected-card">
+                          <div class="icon-placeholder"><img src="assets/images/new-reg-user-icon.svg" alt=""> </div>
+                          <h4>Aaron Bliss</h4>
+                          <p><a href="mailto:orren.blass@kennekpaen.kem">orren.blass@kennekpaen.kem</a></p>
+                          <p><a href="tel:+18008000014">18008000014</a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-newreg">
+                      <div class="card-header bg-primary">
+                        <h5>SUBMITTER</h5>
+                      </div>
+                      <div class="card-body">
+                        <div class="search-region">
+                          <input type="text" placeholder="Search Customer list or scroll to load more...">
+                          <!--Loader and Close comes here-->
+                          <div class="loader-region"> <button class="close-review" style="margin-top: 4px;">
+                              <mat-icon aria-hidden="false" aria-label="Example home icon">close</mat-icon>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="selected-card">
+                          <div class="icon-placeholder"><img src="assets/images/new-reg-user-icon.svg" alt=""> </div>
+                          <h4>Mark Olson</h4>
+                          <p><a href="mailto:markolsnec87@gmail.com">markolsnec87@gmail.com</a></p>
+                          <p><a href="tel:+800.800.0014">800.800.0014</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-newreg">
+                    <div class="card-newreg">
+                      <div class="card-header bg-secondary">
+                        <h5>END CUSTOMER COMPANY INFORMATION</h5>
+                      </div>
+                      <div class="card-body">
+                        <div class="search-region">
+                          <input type="text" placeholder="Search Customer list or scroll to load more...">
+                          <!--Loader and Close comes here-->
+                          <div class="loader-region"> <button class="close-review" style="margin-top: 4px;">
+                              <mat-icon aria-hidden="false" aria-label="Example home icon">close</mat-icon>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="selected-card">
+                          <div class="icon-placeholder"><img src="assets/images/new-reg-company-icon.svg" alt=""> </div>
+                          <h4>Absolute Manufacturing</h4>
+                          <p>20350 71st AVE NE Ste C<br>
+                            Arlington, WA 98223-7455<br>
+                            USA</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-newreg">
+                      <div class="card-header bg-secondary">
+                        <h5>End Customer Primary Contact Information</h5>
+                      </div>
+                      <div class="card-body">
+                        <div class="search-region">
+                          <input type="text" placeholder="Search Customer list or scroll to load more...">
+                          <!--Loader and Close comes here-->
+                          <div class="loader-region"> <button class="close-review" style="margin-top: 4px;">
+                              <mat-icon aria-hidden="false" aria-label="Example home icon">close</mat-icon>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="selected-card">
+                          <div class="icon-placeholder"><img src="assets/images/new-reg-company-contact-icon.svg"
+                              alt="">
+                          </div>
+                          <h4>Rock Bloomberg | IT Manager</h4>
+                          <p><a href="mailto:markolsnec87@gmail.com">rakkb@obselipemfg.kem</a></p>
+                          <p><a href="tel:+(360) 383-4623">(360) 383-4623</a></p>
+                          <p>NA</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Step 2 End-->
+                <div class="btn-bar">
+                  <button mat-button matStepperPrevious>Back</button>
+                  <button mat-button matStepperNext mat-button mat-raised-button color="primary">Next</button>
+                </div>
+              </form>
+            </mat-step>
+            <mat-step>
+              <ng-template matStepLabel>Program Selection</ng-template>
+              <!--Step 3 Start-->
+              <div class="panel-newreg">
+                <div class="card-newreg">
+                  <div class="card-header bg-primary">
+                    <h5>CONNECTED VENDORS</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="search-region">
+                      <input type="text" value="Zoom">
+                      <!--Loader and Close comes here-->
+                      <div class="loader-region"> <button class="close-review" style="margin-top: 4px;">
+                          <mat-icon aria-hidden="false" aria-label="Example home icon">close</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="branding-grid">
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Reseller Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Referral Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Fedral Reseller Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Direct Referral Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Referral Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Reseller Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Fedral Reseller Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Direct Referral Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+
+                    </div>
+                  </div>
+                </div>
+                <div class="card-newreg">
+                  <div class="card-header bg-primary">
+                    <h5>REGTRACKER VENDORS</h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="search-region">
+                      <input type="text" value="Zoom">
+                      <!--Loader and Close comes here-->
+                      <div class="loader-region"> <button class="close-review" style="margin-top: 4px;">
+                          <mat-icon aria-hidden="false" aria-label="Example home icon">close</mat-icon>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="branding-grid">
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Reseller Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Referral Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Fedral Reseller Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Direct Referral Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Referral Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Reseller Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Fedral Reseller Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+
+                      <!--Columns start-->
+                      <div class="branding-column">
+                        <div class="bordered-region ">
+                          <div class="form-check">
+                            <mat-checkbox class="example-margin"></mat-checkbox>
+                            Direct Referral Registration
+                          </div>
+                          <div class="bg-logo"> <img src="assets/images/zoom.png" alt=""> </div>
+                        </div>
+                      </div>
+                      <!--Columns end-->
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Step 3 End-->
+              <div class="btn-bar">
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button mat-raised-button color="primary" (click)="stepper.reset()">Save & Continue</button>
+              </div>
+            </mat-step>
+          </mat-vertical-stepper>
+
+        </div>
+        <!-- <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button> -->
+      </div>
+
+    </mat-drawer-container>
+  </div>
+
+</div>
+
+<footer>
+  <img src="assets/images/footer.jpg">
+</footer>

@@ -1,0 +1,221 @@
+header{ margin: 0;}
+
+header img{ width: 100%;}
+
+footer{ margin: 0;}
+
+footer img{ width: 100%;}
+
+/***** Material Customize *****/
+
+.example-full-width {width: 100%;}
+
+.mat-step-text-label{ text-transform: uppercase; font-size: 16px;}
+
+.mat-drawer {width: 450px; box-shadow: 0 4px 5px 0 rgb(0 0 0 / 1%), 0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 10%); border: 0; overflow-y: visible !important; } 
+
+.mat-drawer.mat-drawer-end{ visibility: visible !important;}
+
+mat-drawer .mat-button.slide-button{ min-width:25px; height: 70px; position:absolute; left: -25px;  background: #4780A8; border-radius: 4px 0 0 4px;  z-index: 1; font-size: 0; padding: 0;}
+
+mat-drawer .mat-button.slide-button mat-icon{ color: #fff;}
+
+.mat-step-header .mat-step-icon{ background-color: rgba(95,98,103,.4); width: 34px; height: 34px;}
+
+.mat-step-header .mat-step-icon .mat-step-icon-content{ background-color:#565857; line-height: 24px; width: 24px; height: 24px; text-align: center; border-radius: 50%;}
+
+.mat-step-header .mat-step-icon.mat-step-icon-selected, .mat-step-header .mat-step-icon.mat-step-icon-state-edit{background-color: rgba(71,129,169,.4); }
+
+.mat-step-header .mat-step-icon.mat-step-icon-selected .mat-step-icon-content{background-color: #4781a9; }
+
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary{ background-color: #4781a9;}
+
+/* .mat-step-header .mat-step-icon-selected .mat-step-icon-content{  background-color: #4781a9;    } */
+
+
+
+/***** Material Customize *****/
+
+.outer{ padding: 20px 0; background: #f9f9f9;}
+
+.new-registration{ position: relative; padding: 15px 0 15px 15px;   overflow-x: hidden;}
+
+.form-new-reg{ background: #fff; border-radius: 4px; padding: 15px 0; /*width: calc(95% - 25px)*/ width: 96%;}
+
+.form-new-reg h3{ margin: 0 0 5px 0; padding: 0; font-size: 20px; font-weight: normal}
+
+.form-new-reg h5{ margin: 0; padding: 0; color: #5F6368;  font-weight: normal}
+
+.form-newreg-title{ margin: 0 0 10px 0; padding: 0 20px;}
+
+.step1{ margin: 0 15px}
+
+.step-fieldbox{padding: 0}
+
+.step2{ margin: 0}
+
+.panel-newreg{ display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 15px; margin-bottom: 15px}
+
+.panel-newreg:last-child{ margin-bottom: 0}
+
+.card-newreg{ border-radius: 4px; border: 1px solid rgba(0, 0, 0, .125); background: #fff}
+
+.card-newreg .card-header { padding:  15px;  border-radius:4px 4px 0 0}
+
+.card-newreg .card-header.bg-primary{background: #4780a8; }
+
+.card-newreg .card-header.bg-secondary{background: #949494; }
+
+.card-newreg .card-header h5 { color: #fff; font-size: 15px; margin: 0; text-transform: uppercase}
+
+.card-newreg .card-body{ padding: 15px; }
+
+.search-region{ margin:0 0 15px 0; border: 1px solid rgba(0, 0, 0, .125); padding:6px 36px 6px 10px; position: relative; border-radius: 4px}
+
+.search-region input[type="text"]{ width:100%; border:0; outline:0 none; background:transparent; font-size:15px; color:#5F6368}
+
+.search-region input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #96989c; opacity: 1;
+}
+.search-region input::-moz-placeholder { /* Firefox 19+ */
+  color: #96989c; opacity: 1;
+}
+.search-region input:-ms-input-placeholder { /* IE 10+ */
+  color: #96989c; opacity: 1;
+}
+.search-region input:-moz-placeholder { /* Firefox 18- */
+  color: #96989c; opacity: 1;
+}
+
+.loader-region{ position: absolute; right: 0; text-align: center; top: 0; width:36px; height: 36px;  /*background:#a2cfef*/ }
+
+.selected-card{padding: 15px 15px 15px 86px; border-radius:4px;  border: 1px solid rgba(0, 0, 0, .125); position: relative;}
+
+.icon-placeholder{ width: 53px; height: 53px; position: absolute; left: 15px; border-radius: 50%; top: 15px;}
+
+.selected-card h4{ margin: 5px 0 8px 0; padding:0; font-weight: normal; font-size: 16px}
+
+.selected-card p{ margin: 0 0 8px 0; font-size:14px; padding:0; color: #5F6368}
+
+.selected-card p a{ font-size:14px; text-decoration: none}
+
+.selected-card p:last-child{ margin-bottom: 0}
+
+/**********Already Included Start*************/
+
+.branding-grid { margin: 0; padding: 0;  display: grid; grid-gap:15px; grid-template-columns: repeat(2, 1fr); overflow-x: auto; height: 400px; }
+    
+.branding-column {  /*padding:0 5px 10px 5px;*/ position: relative;  }
+    
+.bordered-region {  border: 1px solid rgba(0,0,0,.125); display: flex; flex-direction: column; height: 100%; border-radius: 4px; padding: 0;  }
+            
+.brand-program{ padding: 5px 10px; border-radius: 0 0 4px 4px; text-align: center; font-weight: normal; font-size: 13px;  color: #000000; background-color: #F5F5F5}
+    
+.active-vendor { box-shadow: 0px 0px 7px #7C355DCC; border-color: #7C355D;}
+    
+.bg-logo { text-align: center; margin: auto; padding:20px 0}
+
+.bg-logo img { margin: 0 auto; width: 84px;}
+
+/**********Already Included End*************/
+
+.form-check{padding: 10px 15px 10px 30px; border-bottom: 1px solid rgba(0, 0, 0, .125); display: flex; justify-content: center; align-items: center; min-height: 60px;  font-size: 14px; text-align: center;}
+
+.form-check mat-checkbox{ position: absolute; left: 12px;}
+
+.sidepanel-region{width:30%; padding: 0; right: 0; top: 0; transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -webkit-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s;}
+
+.sidepanel{  /*position: absolute;*/   background: #fff;   border-radius: 4px 0 0 4px; height: 100%   }
+
+.scroll-region{/*height:calc(100% - 60px); overflow-y: auto;*/ padding: 20px; }
+
+.title-sidepanel{ display: flex; align-items: center; padding: 20px; z-index: 1;  border-bottom:1px solid #f3f3f3; background: #fff; justify-content: space-between; position: sticky; top: 0; z-index: 1;}
+
+.title-sidepanel h4{ margin: 0; padding: 0; font-size: 18px; color: #000; font-weight: normal}
+
+.close-review{ padding: 0; min-width: 0; border: 0; background-color: transparent;}
+
+.review-card{box-shadow: 0px 0px 2px #00000029; position: relative; border-radius: 4px; margin-bottom: 20px; padding: 25px 20px 20px 20px}
+
+.review-card .selected-card{box-shadow: 0px 0px 2px #00000029; border: 0 }
+
+.review-card:before{ content:""; position: absolute; left: 0; top: 0; width: 100%;  height:6px; background: #4780A8; border-radius: 4px 4px 0 0}
+
+.review-card h5{margin: 0 0 15px 0; padding: 0; text-transform: uppercase; font-size: 16px; font-weight: 500; color: #000}
+
+.filled-value{ margin: 0 0 10px 0}
+
+.filled-value .placeholder{ font-size: 13px; color: #5F6368; margin: 0; font-weight: normal}
+
+.filled-value .inputvalue{font-size: 16px; margin: 0; padding: 0; color: #000; font-weight: normal}
+
+.filled-value:last-child{ margin-bottom: 0}
+
+.selected-program{margin-bottom: 20px; padding-right: 50px; position: relative; /*box-shadow: 0px 0px 2px #00000029; position: relative; border-radius: 4px; padding: 15px 30px 15px 20px*/}
+
+.selected-program .bordered-region{border-radius: 4px 0 0 0;}
+
+.r-program{ border-radius: 0 4px 4px 0; background-color: #ff1744; position: absolute; right: 0; top:0; height: 100%;}
+
+.r-program button{ width: 50px; height: 100%; background: none; border:0; display: block; padding: 0;}
+
+.r-program button mat-icon{ color: #fff;}
+
+.selected-program:last-child{ margin-bottom: 0}
+
+.program-logo{ margin: 0}
+
+.program-logo img{ width: 120px}
+
+.remove-program{ position: absolute; right: 10px; top: 5px}
+
+.r-selected-card{ margin: 20px 0}
+
+.r-selected-card h6{ font-size:14px; text-transform: uppercase; color: #000; margin: 0 0 15px 0; padding: 0}
+
+.r-selected-card:last-child{ margin-bottom: 0}
+
+.slide-button-region{ height: 100%; position: absolute; left: -25px; display: flex; align-items:center}
+
+.btn-bar{ margin-top: 25px; text-align: right;}
+
+.with-tooltip{ width: 94%; }
+
+
+
+
+
+@media only screen and (max-width:991px){
+    
+.form-new-reg {width:calc(100% - 25px)}
+    
+.sidepanel-region{ position: fixed; width: 92%; height: 100%; left: 100%; }
+    
+.sidepanel-region.show{left:6%; }
+    
+.slide-button{ display:block; }
+    
+.sidepanel{ height: 100%; overflow-y: auto}
+
+.panel-newreg{grid-template-columns: repeat(1, 1fr);} 
+    
+}
+
+@media only screen and (max-width:767px){
+
+  .branding-grid{grid-template-columns: repeat(1, 1fr); height: 260px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+    
+    
