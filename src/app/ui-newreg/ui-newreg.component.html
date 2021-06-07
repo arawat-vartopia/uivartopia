@@ -34,11 +34,17 @@
             <h5> OPPORTUNITY INFORMATION</h5>
 
             <div class="filled-value">
-              <label class="placeholder">Name</label>
-              <div class="inputvalue">Auto Reg Training</div>
+              <div *ngIf="!loader">
+                <label class="placeholder">Name</label>
+                <div class="inputvalue">Auto Reg Training</div>
+              </div>
+              
+              <ngx-skeleton-loader count="2" *ngIf="loader" animation="pulse"></ngx-skeleton-loader>
+
+              
             </div>
 
-            <div class="filled-value">
+       <div class="filled-value">
               <label class="placeholder">CRMID</label>
               <div class="inputvalue">EE669047-E897-E311-A5A7-D7633DBC</div>
             </div>
@@ -46,7 +52,7 @@
             <div class="filled-value">
               <label class="placeholder">Description</label>
               <div class="inputvalue">Registration for new vendors</div>
-            </div>
+            </div> 
 
           </div>
           <!--Step 1 Review end-->
@@ -187,7 +193,7 @@
     </button> -->
         <div class="form-new-reg">
           <div class="form-newreg-title">
-            <h3>Registration in 3 simple stepssteps</h3>
+            <h3>Registration in 3 simple steps</h3>
             <h5>This information will let us know more about you</h5>
           </div>
 

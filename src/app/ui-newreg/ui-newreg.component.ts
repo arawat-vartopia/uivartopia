@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import {FormBuilder, Validators} from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-ui-newreg',
@@ -14,12 +14,13 @@ export class UiNewregComponent implements OnInit {
 
   public screenWidth: any;
   public screenHeight: any;
+  loader = true;
 
-  
+
   // private secondFormGroup: FormGroup, private firstFormGroup: FormGroup
   public firstFormGroup: any;
   public secondFormGroup: any;
-  constructor(private _formBuilder: FormBuilder) {}
+  constructor(private _formBuilder: FormBuilder) { }
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
@@ -28,6 +29,10 @@ export class UiNewregComponent implements OnInit {
     this.secondFormGroup = this._formBuilder.group({
       secondCtrl: ['', Validators.required]
     });
+
+    setTimeout(() => {
+      this.loader = false
+    }, 2500);
 
     //Responsive fix//
     this.screenWidth = window.innerWidth;
