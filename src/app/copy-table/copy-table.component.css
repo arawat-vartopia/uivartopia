@@ -15,4 +15,4 @@ label {
 
 .copy-btn{ background-color: transparent; border: 0; padding:0; height: 16px; z-index: 1; position: absolute; left: -10px;top: 0;}
 
-.copy-btn .mat-icon{ width: 16px;height: 16px; font-size: 18px;}
+.copy-btn .mat-icon{ width: 16px;height: 16px; font-size: 18px; color: #434343;}
