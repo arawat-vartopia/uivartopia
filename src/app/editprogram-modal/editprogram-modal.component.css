@@ -29,11 +29,11 @@
 
 .mbtm-15{ margin-bottom: 15px;}
 
-:host ::ng-deep .add-new{ margin: 10px 0 0 0;}
+:host ::ng-deep .add-new{ margin: 5px 0 0 0;}
 
 :host ::ng-deep .add-new .mat-flat-button.mat-warn, :host ::ng-deep .add-new .mat-raised-button.mat-warn, :host ::ng-deep .add-new .mat-fab.mat-warn, :host ::ng-deep .add-new .mat-mini-fab.mat-warn{ color:#f44336; background-color: transparent; box-shadow:none; padding: 0; min-width: 0; line-height: 0;}
 
-:host ::ng-deep .title-addnew{ display: flex; align-items:center; margin-bottom: 10px;}
+:host ::ng-deep .title-addnew{ display: flex; align-items:center; margin-top: 10px; margin-bottom: 10px;}
 
 :host ::ng-deep .title-addnew span{ margin-left: 5px;}
 
@@ -44,3 +44,9 @@
 :host ::ng-deep .delete-button{ display: flex; align-items:flex-end; margin-top: 15px;  flex-direction:column; height: 20px; }
 
 :host ::ng-deep .mat-dialog-actions{ justify-content: flex-end;}
+
+@media only screen and (max-width:767px){
+
+    :host ::ng-deep .add-new .text-right{ text-align: left; margin-bottom: 20px;}
+
+}
